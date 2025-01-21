@@ -1,0 +1,87 @@
+:root {
+    /* Primary Colors */
+    --primary-color: #DBC380; /* Emerald Green */
+    --primary-blue: #2C3E50; /* Midnight Blue */
+
+    /* Secondary Colors */
+    --secondary-teal: #1ABC9C; /* Bright Teal */
+    --secondary-yellow: #181616AD; /* Soft Yellow */
+
+    /* Accent Colors */
+    --accent-red: #E74C3C; /* Crimson Red */
+    --neutral-gray: #ECF0F1; /* Light Gray */
+
+    /* Text Colors */
+    --text-dark: #34495E; /* Dark Slate Gray */
+    --text-light: #FFFFFF; /* Cool White */
+}
+
+body{
+  background: var(--primary-color);
+  color: var(--text-light);
+   }
+.pic{
+  height: 50vh;
+  width: 100%;
+}
+h2{
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      transform: translate(0%, -50%);
+      color: black;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    
+    .line-with-text{
+      transform: translateX(-11%);
+      display: flex;
+      align-items: center ;
+      text-align: center;
+    }
+    
+    .line-with-text::before,
+        .line-with-text::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #000; /* Adjust the line color */
+        }
+        .line-with-text:not(:empty)::before {
+            margin-right: 10px;
+        }
+        .line-with-text:not(:empty)::after {
+            margin-left: 10px;
+        }
+        a {
+          text-decoration: none;
+        }
+        button{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin:5px 0;
+          padding: 10px 5px 10px 5px;
+          width: 80%;
+          border-radius: 5px;
+          border: 0px;
+          
+        }
+        #logIn{
+          color: #fff;
+          background: var(--secondary-yellow)
+        }
+        .accountButtons{
+          position: absolute;
+          bottom: -50;
+          width: 60%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-43% , 70%)
+        }
+        .icon{
+          width:20px;
+          height: 20px;
+          vertical-align: middle;
+          display :inline-flex;
+        }
